@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/globalStyles.css" />
+    
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/colors.css" />
+    <link rel="stylesheet" href="./styles/otherParts.css" />
+    <link rel="stylesheet" href="./styles/positions.css" />
+    <link rel="stylesheet" href="./styles/texts.css" />
+    
+    <link rel="stylesheet" href="./pages/home/aside.css" />
+    <link rel="stylesheet" href="./pages/home/post.css" />
+    <link rel="stylesheet" href="./pages/home/feed.css" />
+    <link rel="stylesheet" href="./pages/home/modal.css" />
+    <link rel="stylesheet" href="./pages/home/style.css" />
+    
+    <title>TechPosters - Home</title>
+  </head>
+  <body>
+    <header class="flex justify-between align-center bgc-grey1 color-white">
+      <h1 class="title2">TechPosters</h1>
+      <p class="text2">Sair</p>
+    </header>
+    <main class="container flex-col justify-between">
+      <div class="top-part width100 flex">
+        <section class="flex-col gap1">
+          <div class="post-user flex gap1">
+            <img src="./assets/img/user1.svg" alt="User Image">
+            <div class="post-user-info">
+              <h2 class="title2">Samuel Leão</h2>
+              <p class="text2">Front end Engineer</p>
+            </div>
+          </div>
+          <form class="flex-col gap1">
+            <input id="newPostTitle" class="input-default" type="text" placeholder="Digite o titulo de sua postagem aqui...">
+            <textarea id="newPostText" class="input-default" placeholder="Digite a sua postagem aqui..."></textarea>
+            <button id="newPostButton" class="post-button button-primary-default">Postar</button>
+          </form>
+        </section>
+        <aside class="flex-col">
+          <h2 class="title2">Sugestões para você seguir</h2>
+          <div id="cards-container" class="cards-container flex gap1">
+            <!-- AQUI DENTRO O JS VAI RENDERIZAR OS CARDS DE USUÁRIOS -->
+          </div>
+        </aside>
+      </div>
+      <div id="feed" class="feed flex-col gap1">
+        <h2 class="title1">Posts</h2>
+        <!-- AQUI DENTRO O JS VAI RENDERIZAR OS POSTS -->
+      </div>
+    </main>
+
+    <div id="modal" class="modal">
+      <p data-control-modal="modal" class="exit-modal title2">X</p>
+      <div id="modalCard" class="modal-card flex-col gap2">
+        <!-- AQUI DENTRO O JS VAI RENDERIZAR O CARD DO MODAL -->
+       </div>
+    </div>
+    
+  </body>
+  <script src="./script/database/users.js"></script>
+  <script src="./script/database/posts.js"></script>
+  <script src="./script/database/sugestUsers.js"></script>
+  <script src="./pages/home/index.js"></script>
+</html>

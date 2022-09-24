@@ -1,0 +1,61 @@
+
+
+aside{
+    width: 35%;
+    height: 200px;
+    padding: 0 20px;
+    /* border: 1px solid blueviolet; */
+    position: sticky;
+    top: 0px;
+}
+
+aside > h2{
+    margin-bottom: 3.75rem;
+}
+
+.cards-container{
+    flex-direction: column;
+}
+
+.sugestion-card{
+    width: 100%;
+    padding: 2px;
+    height: 3.25rem;
+    /* border: 5px solid green; */
+    margin-bottom: 4rem;
+
+}
+
+.sugestion-card > button{
+    height: 28px;
+}
+
+.sugestion-card-user > img{
+    height: 3.25rem;
+}
+
+@media (max-width: 800px) {
+    .top-part{
+        flex-direction: column;
+        
+    }
+
+    section{
+        width: 100%;
+    }
+
+    aside{
+        width: 100%;
+    }
+
+    .cards-container{
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    .sugestion-card{
+        flex-direction: column;
+        justify-content: flex-end;
+        transform: translateY(50px);
+    }
+}

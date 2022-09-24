@@ -7,23 +7,98 @@
 }
 
 :root{
+    /* CORES DO PROJETO */
+    --color-brand-1: #4263EB;
+    --color-brand-2: #364FC7;
+
+    --color-grey-0: #0A0C0D;
     --color-grey-1: #212529;
     --color-grey-2: #495057;
+    --color-grey-3: #868E96;
+    --color-grey-4: #DEE2E6;
+    --color-grey-5: #F8F9FA;
     --color-white-fixed: #ffffff;
-    --radius-1: 0.25rem;
+    
+    --color-grey-1-50: rgba(34, 38, 42, 0.85);
+
+    --color-like: #D7443E;
+
+
+    /* ESTILIZAÇÕES DE FONTES */
     --font-family-1: "Inter", sans-serif;
+    --title1-weight: 700;
+    --title1-size: 1.75rem;
+    --title1-lineheight: 2.5rem;
+    --title2-weight: 600;
+    --title2-size: 1.25rem;
+    --title2-lineheight: 1.5rem;
+    --text1-weight: 400;
+    --text1-size: 1rem;
+    --text1-lineheight: 1.75rem;
+    --text2-weight: 400;
+    --text2-size: 0.875rem;
+    --text2-lineheight: 1rem;
+    --text3-weight: 400;
+    --text3-size: 0.75rem;
+    --text3-lineheight: 1rem;
+
+
+    /* OUTRAS ESTILIZAÇÕES */
+    --radius-1: 0.25rem;
 }
 
-body{
-    font-family: var(--font-family-1);
-}
 
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
 
-ul{
-    list-style: none;
+
+
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }

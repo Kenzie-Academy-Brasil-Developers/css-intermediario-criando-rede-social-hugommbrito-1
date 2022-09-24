@@ -1,0 +1,31 @@
+/* COMPONENTIZAÇÕES DE TEXTOS */
+
+.title1{
+    font-weight: var(--title1-weight);
+    font-size: var(--title1-size);
+    line-height: var(--title1-lineheigth);
+}
+
+.title2{
+    font-weight: var(--title2-weight);
+    font-size: var(--title2-size);
+    line-height: var(--title2-lineheight);
+}
+
+.text1{
+    font-weight: var(--text1-weight);
+    font-size: var(--text1-size);
+    line-height: var(--text1-lineheight);
+}
+
+.text2{
+    font-weight: var(--text2-weight);
+    font-size: var(--text2-size);
+    line-height: var(--text2-lineheight);
+}
+
+.text3{
+    font-weight: var(--text3-weight);
+    font-size: var(--text3-size);
+    line-height: var(--text3-lineheigth);
+}

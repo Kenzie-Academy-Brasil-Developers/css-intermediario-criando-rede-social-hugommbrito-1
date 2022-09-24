@@ -1,0 +1,17 @@
+.feed{
+    width: 60%;
+}
+
+.feed-post{
+    margin-bottom: 2rem;
+}
+
+.feed > .feed-post > .post-user > img {
+    height: 3.25rem;
+}
+
+@media (max-width: 800px) {
+    .feed{
+        width: 100%;
+    }
+}

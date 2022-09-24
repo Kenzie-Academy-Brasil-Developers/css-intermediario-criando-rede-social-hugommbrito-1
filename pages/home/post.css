@@ -1,0 +1,23 @@
+section{
+    width: 60%;
+    margin-bottom: 40px;
+    /* border: 3px solid yellow; */
+}
+
+
+section > div > img{
+    height: 3.25rem;
+}
+
+.post-button{
+    padding: 0 12px;
+    height: 38px;
+    width: 20%;
+    
+}
+
+@media (max-width: 800px) {
+    section{
+        width: 100%;
+    }
+}

@@ -1,0 +1,26 @@
+
+body{
+    font-family: var(--font-family-1);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    transform: translateY(8.5rem);
+    /* border: 2px solid red; */
+}
+
+ul{
+    list-style: none;
+}
+
+.top-part{
+    position: relative;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

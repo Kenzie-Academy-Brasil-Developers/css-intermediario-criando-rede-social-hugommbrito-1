@@ -1,0 +1,30 @@
+/* COMPONENTIZAÇÃO DE POSICIONAMENTO */
+.flex{
+    display: flex;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.gap1{
+    gap: 1rem;
+}
+
+.gap2{
+    gap: 2rem;
+}
+
+.width100{
+    width: 100%;
+    /* border: 2px solid blueviolet; */
+}
