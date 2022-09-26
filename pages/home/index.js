@@ -141,7 +141,7 @@ let newPostButton = document.getElementById("newPostButton")
 newPostButton.addEventListener("click", function(e){
     let newPostTitle = document.getElementById("newPostTitle")
     let newPostText = document.getElementById("newPostText")
-    
+    console.log(listarPosts)
     let newPost = {
         id_post: posts.length + 1,
         user: 1,
@@ -152,12 +152,14 @@ newPostButton.addEventListener("click", function(e){
     }
     
     posts.push(newPost)
-
+    
+    console.log(posts)
     listarPosts()
 
     listenLikeButton()
     
     listenModalButtons()
+    e.preventDefault()
 })
 
 
