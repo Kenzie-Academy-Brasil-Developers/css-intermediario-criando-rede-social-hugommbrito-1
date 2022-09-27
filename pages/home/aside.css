@@ -7,6 +7,7 @@ aside{
     /* border: 1px solid blueviolet; */
     position: sticky;
     top: 0px;
+    background-color: var(--color-white-fixed);
 }
 
 aside > h2{
@@ -35,10 +36,6 @@ aside > h2{
 }
 
 @media (max-width: 800px) {
-    .top-part{
-        flex-direction: column;
-        
-    }
 
     section{
         width: 100%;
@@ -46,16 +43,32 @@ aside > h2{
 
     aside{
         width: 100%;
+        min-height: 150px;
+        z-index: 2;
+        position: unset;
+    }
+
+    aside > h2{
+        margin-bottom: 1rem;
     }
 
     .cards-container{
         flex-direction: row;
         overflow-x: auto;
+        height: 120px;
+    }
+
+    .cards-container::-webkit-scrollbar {
+        display: none;
     }
 
     .sugestion-card{
         flex-direction: column;
         justify-content: flex-end;
-        transform: translateY(50px);
+        height: 5.5rem;
+    }
+
+    .sugestion-card-user{
+        width: 250px;
     }
 }

@@ -101,7 +101,6 @@ function listenModalButtons(){
     for (let i = 0; i < modalButton.length; i++) {
         modalButton[i].addEventListener("click", function(e){
             modal.classList.toggle("show-modal")
-            window.scrollTo(0, 0)
     
             if(modal.classList.contains("show-modal")){
                 let clickedButton = e.target
@@ -112,11 +111,11 @@ function listenModalButtons(){
                     }
                 }
                 
-                let modalCard = document.getElementById("modalCard")
+                let modalCardInfo = document.getElementById("modalCardInfo")
                 let postUser = findPostUser(selectedPost)
         
-                modalCard.innerHTML = ""
-                modalCard.insertAdjacentHTML("beforeend", `
+                modalCardInfo.innerHTML = ''
+                modalCardInfo.insertAdjacentHTML("beforeend", `
                     <div class="post-user flex gap1">
                         <img src=${postUser.img} alt="User Image">
                         <div class="post-user-info">

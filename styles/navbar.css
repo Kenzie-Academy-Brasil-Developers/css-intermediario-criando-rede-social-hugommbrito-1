@@ -1,5 +1,5 @@
 header{
-    padding: 1.875rem 6.25rem;
+    padding: 1.875rem 0;
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -8,4 +8,17 @@ header{
 header > p:hover{
     color: var(--color-grey-3);
     cursor: pointer;
+}
+
+.headerContainer{
+    max-width: 1200px;
+    padding: 0 6.25rem;
+    margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+    .headerContainer{
+        padding: 0 5%;
+    }
+
 }

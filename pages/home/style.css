@@ -3,10 +3,14 @@ body{
     font-family: var(--font-family-1);
 }
 
+.main{
+
+}
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 1.875rem 6.25rem;
     transform: translateY(8.5rem);
     /* border: 2px solid red; */
 }
@@ -15,12 +19,13 @@ ul{
     list-style: none;
 }
 
-.top-part{
-    position: relative;
-    justify-content: space-between;
-}
-
 a{
     text-decoration: none;
     color: white;
+}
+
+@media (max-width: 800px) {
+    .container{
+        padding: 0 5%;
+    }
 }

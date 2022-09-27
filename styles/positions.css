@@ -28,3 +28,7 @@
     width: 100%;
     /* border: 2px solid blueviolet; */
 }
+
+.wrap{
+    flex-wrap: wrap;
+}
